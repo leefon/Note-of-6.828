@@ -16,5 +16,7 @@ Trace the execution of the following code step-by-step:
 int x = 1, y = 3, z = 4;
 cprintf("x %d, y %x, z %d\n", x, y, z);
 
-    In the call to cprintf(), to what does fmt point? To what does ap point?
-    List (in order of execution) each call to cons_putc, va_arg, and vcprintf. For cons_putc, list its argument as well. For va_arg, list what ap points to before and after the call. For vcprintf list the values of its two arguments.
+    - In the call to cprintf(), to what does fmt point? To what does ap point?
+    - List (in order of execution) each call to cons_putc, va_arg, and vcprintf. For cons_putc, list its argument as well. For va_arg, list what ap points to before and after the call. For vcprintf list the values of its two arguments.
+    
+`问题3需要单步调试两行代码，这段代码可以添加到void monitor(struct Trapframe *tf).`
